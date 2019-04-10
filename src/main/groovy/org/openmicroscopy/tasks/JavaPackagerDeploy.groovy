@@ -84,7 +84,7 @@ class JavaPackagerDeploy implements CommandLineArgumentProvider {
         icon = project.objects.fileProperty()
         outputDir = project.objects.directoryProperty()
         srcDir = project.objects.directoryProperty()
-        srcFiles = project.objects.fileCollection()
+        srcFiles = project.files()
     }
 
     @Override

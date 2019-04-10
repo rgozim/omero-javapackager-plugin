@@ -61,7 +61,7 @@ class DefaultInstallOptions implements InstallOptions {
         this.licenseFile = project.objects.fileProperty()
         this.outputFile = project.objects.fileProperty()
         this.sourceDir = project.objects.directoryProperty()
-        this.sourceFiles = project.objects.fileCollection()
+        this.sourceFiles = project.files()
     }
 
     Iterable<CommandLineArgumentProvider> createCmdArgProviders(String outputType) {
